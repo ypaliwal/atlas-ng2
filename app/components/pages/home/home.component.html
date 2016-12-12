@@ -1,0 +1,24 @@
+<div class="router-outlet-wrapper">
+<div class="row jumbo">
+    <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <div class="text-left ">
+            <h1>PROJECT: Atlas</h1>
+            <h3>Canadian Political Knowledge Hub</h3>
+            <hr class="jumbo-hr">
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="get-started col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+        <p class="gs-1">Learn about your MP and how they're voting on issues that matter to you!</p>
+        <p class="gs-2">Please enter your postal code to get started.</p>
+        <form>
+            <input type="text" class="form-control" placeholder="E.g. L5V 16R" [(ngModel)]="postalCode" name="postalCode">
+            <!--<input type="text" [(ngModel)]="postalCode">-->
+            <button class="btn btn-primary" (click)="onClick()">Submit</button>
+        </form>
+        
+    </div>
+</div>
+</div>

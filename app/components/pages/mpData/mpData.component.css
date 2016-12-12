@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400');
+
+.bold {
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px; 
+    font-weight: 100;
+}
+
+.your-mp-img {
+    position: absolute;
+    clip: rect(20px,142px,162px,0px);
+}
+
+.mp-sec {
+    background: dimgrey;
+    height: 15em;
+    padding-top: 15px;
+}
+
+.mp-sec-text {
+    padding-top: 9px;
+    color: #e6e6e6;
+}
+
+.mp-sec-email {
+    color: #64b4f8;
+}
+
+.rec-vote {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+}
+
+.right-col {
+    text-align: right;
+}

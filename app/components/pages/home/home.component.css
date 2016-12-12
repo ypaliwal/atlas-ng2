@@ -1,0 +1,45 @@
+.jumbo {
+    color: white;
+    background-image: url("./assets/jumbo_bg_dark.png");
+    background-size: cover;
+    
+    padding-top: 11em;
+    padding-bottom: 3em;
+}
+
+.jumbo-hr {
+    width: 20%;
+    margin-left: 0;
+    border-top: 5px solid #eee;
+}
+
+.get-started {
+    padding-top: 2em;
+}
+
+.gs-1 {
+    font-size: 19px;
+}
+
+.gs-2 {
+    font-size: 15px;
+    padding-top: 37px;
+}
+
+input {
+    width: 200px;
+    height: 34px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    height: 34px;
+    width: 140px;
+    background-color: #533600;
+    border-radius: 0;
+    border-color: #533600;
+    padding: 2px;
+}

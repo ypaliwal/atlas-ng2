@@ -1,0 +1,42 @@
+<navbar></navbar>
+<div class="router-outlet-wrapper">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <!--<h1>Hey there!</h1>-->
+            <h2>You're looking political data for {{mpDataLocal.code}}, {{mpDataLocal.city}}</h2>
+        </div>
+    </div>
+    <div class="row mp-sec">
+        <div class="col-md-2 col-md-offset-2">
+            <img class="your-mp-img" src="{{mpDataLocal.representatives_centroid[0].photo_url}}" alt="{{mpDataLocal.representatives_centroid[0].first_name}} {{mpDataLocal.representatives_centroid[0].last_name}}">
+        </div>
+        <div class="col-md-5 your-mp mp-sec-text">
+            <h4>Your MP is {{mpDataLocal.representatives_centroid[0].first_name}} {{mpDataLocal.representatives_centroid[0].last_name}}</h4>
+            <div *ngIf="mpDataByNameExists">
+                <p>Email: <a class="mp-sec-email" href="mailto:{{mpDataByName.email}}">{{mpDataByName.email}}</a></p>
+                <p>Phone: {{mpDataByName.voice}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row rec-votes-spacer">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>Here's how {{fname}} voted in the past 10 parliamentary votes:</h3>
+        </div>
+    </div>
+
+    <div *ngFor="let vote of recentVotesValidated" class="row rec-vote">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+                <p><span class="bold">Vote description:</span> {{vote.description.enShort}}</p>
+                <p><span class="bold">Bill:</span> C-9</p>
+            </div>
+            <div class="col-md-4 right-col">
+                <p><span class="bold">Vote Status:</span> {{vote.result}}</p>
+                <p><span class="bold">Vote #</span>{{vote.number}}</p>
+                <p><span class="bold">Session:</span> {{vote.session}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
